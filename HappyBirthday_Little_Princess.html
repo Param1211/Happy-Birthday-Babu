@@ -542,7 +542,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Poppins',sans-seri
       Close your eyes and wish for something beautiful 💖
     </p>
     <div id="wishCountdownWrap" style="margin-top:16px;font-family:'Allura',cursive;font-size:1.2rem;color:rgba(255,220,180,0.8);animation:fadeInUp 1s ease 1s both;">
-      <span id="wishCountdownText">Opening gifts in <span id="wishCountNum">20</span>s ✨</span>
+      <span id="wishCountdownText">More Gifts in<span id="wishCountNum">20</span>s ✨</span>
     </div>
     <button class="next-btn" id="wishNextBtn" onclick="goBackToGifts()"
       style="margin-top:20px;opacity:0;pointer-events:none;transition:opacity 0.8s ease;background:linear-gradient(135deg,#FFD700,#FFA500);color:#2d1a2e;animation:btnGlow 2s ease-in-out infinite;">
@@ -678,7 +678,7 @@ function goTo(n){
     if(wb) wb.classList.remove('show');
   }
   // Stop gallery autoplay when leaving
-  if(currentPage===8){ const lm=document.getElementById('letterMusic'); if(lm){ lm.pause(); lm.currentTime=0; } }
+  if(currentPage===2){ const lm=document.getElementById('letterMusic'); if(lm){ lm.pause(); lm.currentTime=0; } }
   if(currentPage===6 && galleryAutoPlay){ clearInterval(galleryAutoPlay); galleryAutoPlay=null; }
   document.getElementById('page'+currentPage).classList.remove('active');
   currentPage=n;
